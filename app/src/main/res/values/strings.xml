@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CPPCampusMap</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
