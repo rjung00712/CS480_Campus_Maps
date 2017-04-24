@@ -15,6 +15,8 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.maps.android.clustering.ClusterManager;
 
+import cs499android.com.cppcampusmap.Model.ClusterRenderer;
+
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private static final int PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 1;
@@ -187,6 +189,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             lat = lat + offset;
             lng = lng + offset;
             MyItem offsetItem = new MyItem(lat, lng);
+            //MarkerOptions marker = new MarkerOptions().position(new LatLng(lat,lng)).title("Parking");
+            //marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.parking));
+            //mMap.addMarker(marker);
+            mClusterManager.setRenderer(new ClusterRenderer(this.getApplicationContext(), mMap, mClusterManager));
             mClusterManager.addItem(offsetItem);
         }
     }

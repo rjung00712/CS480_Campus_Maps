@@ -1,5 +1,9 @@
 package cs499android.com.cppcampusmap;
 
+import android.graphics.drawable.Icon;
+
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.maps.android.clustering.ClusterItem;
 
@@ -11,6 +15,7 @@ public class MyItem implements ClusterItem {
     private final LatLng mPosition;
     private String mTitle;
     private String mSnippet;
+    private Icon icon;
 
     public MyItem(double lat, double lng) {
         mPosition = new LatLng(lat, lng);
@@ -20,7 +25,12 @@ public class MyItem implements ClusterItem {
         mPosition = new LatLng(lat, lng);
         mTitle = title;
         mSnippet = snippet;
+
     }
+    public BitmapDescriptor getIcon() {
+        return BitmapDescriptorFactory.fromResource(R.drawable.parking);
+    }
+
 
     @Override
     public LatLng getPosition() {
@@ -37,3 +47,4 @@ public class MyItem implements ClusterItem {
         return mSnippet;
     }
 }
+
