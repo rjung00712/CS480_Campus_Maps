@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">CPPCampusMap</string>
     <string name="title_activity_maps">Map</string>
+    <string name="random_text" />
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="administration">Adminstration</string>
+    <string name="buildings">Buildings</string>
+    <string name="residential_hall_suite">Residential Hall/Suite</string>
+    <string name="food_courts">Food Courts</string>
+    <string name="parking">Parking</string>
+    <string name="landmarks">Landmarks</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="building">Hello blank fragment</string>
 </resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:clickable ="true">
+        <item
+            android:id="@+id/nav_admin"
+            android:title="@string/administration"
+            android:clickable ="true"/>
+        <item
+            android:id="@+id/nav_build"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/buildings"
+            android:clickable ="true"/>
+        <item
+            android:id="@+id/nav_dorm"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/residential_hall_suite"
+            android:clickable ="true"/>
+        <item
+            android:id="@+id/nav_food"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/food_courts"
+            android:clickable ="true"/>
+        <item
+            android:id="@+id/nav_park"
+            android:title="@string/parking"
+            android:clickable ="true"/>
+        <item
+            android:id="@+id/nav_land"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/landmarks"
+            android:clickable ="true"/>
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
