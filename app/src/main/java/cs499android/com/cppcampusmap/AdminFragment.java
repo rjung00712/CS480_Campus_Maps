@@ -20,7 +20,7 @@ import static cs499android.com.cppcampusmap.R.id.list;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class AdminFragment extends Fragment implements AppCompatActivity {
+public class AdminFragment extends Fragment {
 
     private List<AdminBldg> adminBldgList;
     private AdminBldgArrayAdapter adminBldgArrayAdapter;
@@ -54,7 +54,7 @@ public class AdminFragment extends Fragment implements AppCompatActivity {
         listView = (ListView) listView.findViewById (list);
 
         adminBldgArrayAdapter = new AdminBldgArrayAdapter(
-                this, R.layout.fragment_admin, adminBldgList);
+                getActivity (), R.layout.fragment_admin, adminBldgList);
 
         listView.setAdapter(adminBldgArrayAdapter);
 

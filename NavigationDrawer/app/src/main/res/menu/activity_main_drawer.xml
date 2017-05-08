@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/ic_business_center_black_24px"
+            android:title="Administration" />
+        <item
+            android:id="@+id/nav_build"
+            android:icon="@drawable/ic_domain_black_24px"
+            android:title="Buildings" />
+        <item
+            android:id="@+id/nav_dorm"
+            android:icon="@drawable/ic_home_black_24px"
+            android:title="Residential Hall/Suite" />
+        <item
+            android:id="@+id/nav_food"
+            android:icon="@drawable/ic_free_breakfast_black_24px"
+            android:title="Food and Actity" />
+        <item
+            android:id="@+id/nav_park"
+            android:icon="@drawable/ic_local_parking_black_24px"
+            android:title="Parking"/>
+        <item
+            android:id="@+id/nav_land"
+            android:icon="@drawable/ic_terrain_black_24px"
+            android:title="Landmarks" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
